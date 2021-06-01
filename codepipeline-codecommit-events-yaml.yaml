@@ -2,19 +2,19 @@ Parameters:
   BranchName:
     Description: CodeCommit branch name
     Type: String
-    Default: master
+    Default: features/createPipeline
   RepositoryName:
     Description: CodeComit repository name
     Type: String
-    Default: myrepo
+    Default: ki-campus
   ApplicationName:
     Description: CodeDeploy application name
     Type: String
-    Default: DemoApplication
+    Default: KiCampus
   BetaFleet:
     Description: Fleet configured in CodeDeploy
     Type: String
-    Default: DemoFleet
+    Default: AiFleet
 Resources:
   CodePipelineArtifactStoreBucket:
     Type: 'AWS::S3::Bucket'
@@ -29,9 +29,9 @@ Resources:
             Effect: Deny
             Principal: '*'
             Action: 's3:PutObject'
-            Resource: !Join 
+            Resource: !Join
               - ''
-              - - !GetAtt 
+              - - !GetAtt
                   - CodePipelineArtifactStoreBucket
                   - Arn
                 - /*
@@ -42,9 +42,9 @@ Resources:
             Effect: Deny
             Principal: '*'
             Action: 's3:*'
-            Resource: !Join 
+            Resource: !Join
               - ''
-              - - !GetAtt 
+              - - !GetAtt
                   - CodePipelineArtifactStoreBucket
                   - Arn
                 - /*
@@ -70,7 +70,7 @@ Resources:
             Statement:
               - Effect: Allow
                 Action: 'codepipeline:StartPipelineExecution'
-                Resource: !Join 
+                Resource: !Join
                   - ''
                   - - 'arn:aws:codepipeline:'
                     - !Ref 'AWS::Region'
@@ -87,7 +87,7 @@ Resources:
         detail-type:
           - CodeCommit Repository State Change
         resources:
-          - !Join 
+          - !Join
             - ''
             - - 'arn:aws:codecommit:'
               - !Ref 'AWS::Region'
@@ -104,7 +104,7 @@ Resources:
           referenceName:
             - master
       Targets:
-        - Arn: !Join 
+        - Arn: !Join
             - ''
             - - 'arn:aws:codepipeline:'
               - !Ref 'AWS::Region'
@@ -112,7 +112,7 @@ Resources:
               - !Ref 'AWS::AccountId'
               - ':'
               - !Ref AppPipeline
-          RoleArn: !GetAtt 
+          RoleArn: !GetAtt
             - AmazonCloudWatchEventRole
             - Arn
           Id: codepipeline-AppPipeline
@@ -120,7 +120,7 @@ Resources:
     Type: 'AWS::CodePipeline::Pipeline'
     Properties:
       Name: codecommit-events-pipeline
-      RoleArn: !GetAtt 
+      RoleArn: !GetAtt
         - CodePipelineServiceRole
         - Arn
       Stages:
