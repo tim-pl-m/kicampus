@@ -7,6 +7,9 @@ vue create vue-project && cd vue-project
 (vue add router)
 http://localhost:8080/
 
+npm install
+npm run dev
+
 sources:
 https://docs.aws.amazon.com/codepipeline/latest/userguide/tutorials-cloudformation-codecommit.html
 https://docs.aws.amazon.com/codepipeline/latest/userguide/tutorials-simple-codecommit.html
