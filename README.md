@@ -1,7 +1,10 @@
 ki-campus
 
-
-
+vue
+npm i -g @vue/cli
+vue create vue-project && cd vue-project
+(npm run serve)
+vue add router
 
 sources:
 https://docs.aws.amazon.com/codepipeline/latest/userguide/tutorials-cloudformation-codecommit.html
