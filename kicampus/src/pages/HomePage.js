@@ -10,6 +10,10 @@ export default function HomePage() {
 
     <div className="container">
 
+      <p>
+      <img src={Png} alt=""/>
+      </p>
+
       <h1>Home </h1>
 
       <p>
@@ -18,22 +22,7 @@ export default function HomePage() {
 
       </p>
 
-      <img src={Png}>
-
-      <p>
-      <img src={require('./static-homepage.png')} />
-      </p>
-
-     //  <img className="img-fluid"
-     // src={`${process.env.PUBLIC_URL}./static-homepage.png`}
-     // alt="logo"/>
-
     </div>
-
-    // <div className="container">
-    //       //right below here
-    //       <img  src={mainLogo} style={nbStyle.logo} alt="fireSpot"/>
-    // </div>
 
   )
 
