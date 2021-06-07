@@ -7,12 +7,14 @@ cd src
 rm -f *
 npm install react-router-dom
 
+https://create-react-app.dev/docs/deployment/
 
 
 
+npm run build
 
-
-
+npm install -g serve
+serve -s build
 
 
 
