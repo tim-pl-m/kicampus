@@ -3,10 +3,25 @@ ki-campus
 npx create-react-app kicampus
 cd kicampus
 npm start
+cd src
+rm -f *
+npm install react-router-dom
+
+
+
+
+
+
+
+
+
+
+
 
 sources:
 
 react:
+https://www.creative-tim.com/blog/web-development/create-single-page-application-using-react/
 https://reactjs.org/docs/getting-started.html
 https://reactjs.org/tutorial/tutorial.html
 https://reactjs.org/docs/hello-world.html
