@@ -11,6 +11,9 @@ https://reactjs.org/docs/getting-started.html
 https://reactjs.org/tutorial/tutorial.html
 https://reactjs.org/docs/hello-world.html
 
+https://babeljs.io/docs/en/editors/
+https://github.com/gandm/language-babel#installation
+
 bootstrap:
 
 aws:
