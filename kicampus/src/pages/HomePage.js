@@ -1,17 +1,23 @@
-import React from “react”;
+import React from 'react'
+
+import { Link } from 'react-router-dom'
 
 export default function HomePage() {
 
-return (
+  return (
 
-<>
+    <div className="container">
 
-<h1>Hey from HomePage</h1>
+      <h1>Home </h1>
 
-<p>This is your awesome HomePage subtitle</p>
+      <p>
 
-</>
+        <Link to="/your desired link">Your desired link.</Link>
 
-);
+      </p>
+
+    </div>
+
+  )
 
 }
