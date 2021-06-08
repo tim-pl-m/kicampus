@@ -7,6 +7,7 @@ npm install react-router-dom
 #typings for react-router-dom (required for TS)
 npm install @types/react-router-dom
 npm install axios
+# Maybe non-dev-dependency for build server?
 npm install cypress --save-dev
 
 https://create-react-app.dev/docs/deployment/
