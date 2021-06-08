@@ -106,7 +106,7 @@ web-frontend/node_modules
 web-frontend/coverage
 
 # production
-web-frontend/build
+# web-frontend/build
 
 # misc
 .env
