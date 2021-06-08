@@ -2,12 +2,12 @@ ki-campus
 
 
 #react
-npx create-react-app kicampus
-cd kicampus
-npm start
-cd src
-rm -f *
+npx create-react-app web-frontend --template typescript
 npm install react-router-dom
+#typings for react-router-dom (required for TS)
+npm install @types/react-router-dom
+npm install axios
+npm install cypress --save-dev
 
 https://create-react-app.dev/docs/deployment/
 
