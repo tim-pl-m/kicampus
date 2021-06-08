@@ -4,7 +4,8 @@ import './App.css';
 import {
   BrowserRouter as Router,
   Switch,
-  Route
+  Route,
+  Link
 } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import ProjectsPage from "./pages/ProjectsPage";
@@ -21,6 +22,16 @@ export default function App() {
               <ProjectsPage />
             </Route>
           </Switch>
+          <nav>
+            <ul>
+              <li>
+                <Link to="/">Startseite</Link>
+              </li>
+              <li>
+                <Link to="/projekte">Meine Projekte</Link>
+              </li>
+            </ul>
+          </nav>
         </div>
       </Router>
   );
