@@ -9,7 +9,7 @@ cd src
 rm -f *
 npm install react-router-dom
 
-https://create-react-app.dev/docs/deployment/
+
 
 
 
@@ -86,6 +86,7 @@ sudo certbot
 sources:
 
 react:
+https://create-react-app.dev/docs/deployment/
 https://www.creative-tim.com/blog/web-development/create-single-page-application-using-react/
 https://reactjs.org/docs/getting-started.html
 https://reactjs.org/tutorial/tutorial.html
